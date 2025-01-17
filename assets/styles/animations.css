@@ -1,0 +1,72 @@
+/* Animations pour la navbar */
+.scroll-down {
+    transform: translateY(-100%);
+}
+
+.scroll-up {
+    transform: translateY(0);
+}
+
+/* Animation pour les cartes */
+.program-card, .team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover, .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation pour les boutons */
+.cta-button, .registration-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover, .registration-button:hover {
+    transform: translateY(-3px);
+}
+
+/* Animation pour les icônes sociales */
+.social-links a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Animation pour le menu burger */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Animations pour les images */
+.team-member img {
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+} 
