@@ -39,6 +39,17 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -138,20 +149,93 @@ body {
 
 /* About Section */
 .about-section {
-    padding: 5rem 2rem;
+    padding: 8rem 2rem;
     background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.05) 0%, rgba(52, 168, 83, 0.05) 100%);
+    z-index: 0;
 }
 
 .about-section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: var(--primary-color);
+    font-size: 2.5rem;
+    position: relative;
 }
 
-.association-info {
+.about-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.about-section > p {
     max-width: 800px;
     margin: 0 auto 4rem;
     text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--gray-dark);
+    position: relative;
+}
+
+.association-info {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.association-info h3 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.association-info p {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 4rem 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .association-info {
+        padding: 1.5rem;
+    }
+
+    .association-info p {
+        font-size: 1rem;
+        padding: 0;
+    }
 }
 
 .team-section {
@@ -233,8 +317,10 @@ body {
     background-image: url('../images/stade2.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     color: white;
+    min-height: 80vh;
 }
 
 .registration-section::before {
@@ -244,12 +330,33 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.8)
+    );
+    z-index: 1;
 }
 
-.registration-section > * {
+.registration-section h2,
+.registration-section p,
+.registration-section a,
+.registration-section .registration-info {
     position: relative;
-    z-index: 1;
+    z-index: 2;
+}
+
+.registration-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.registration-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
 }
 
 .registration-button {
@@ -368,25 +475,64 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 1rem;
+.burger-menu {
+    display: none;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+    margin-left: auto; /* Pour le positionner à droite */
+}
+
+.burger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.burger-menu .bar:nth-child(1) { top: 0; }
+.burger-menu .bar:nth-child(2) { top: 50%; transform: translateY(-50%); }
+.burger-menu .bar:nth-child(3) { bottom: 0; }
+
+/* Animation du burger menu */
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
     }
 
     .nav-links {
         display: none;
     }
 
-    .burger-menu {
-        display: block;
+    .nav-links.active {
+        display: flex;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
     }
+}
 
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-} 

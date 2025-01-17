@@ -11,28 +11,31 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">FootAvenir</div>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo FootAvenir">
+            <span class="logo-text">FootAvenir</span>
+        </div>
         <div class="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#program">Programme</a>
-            <a href="#registration">Inscription</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" data-translate="about">À propos</a>
+            <a href="#program" data-translate="program">Programme</a>
+            <a href="#registration" data-translate="registration">Inscription</a>
+            <a href="#contact" data-translate="contact">Contact</a>
             <div class="language-selector">
                 <span class="active">FR</span>
                 <span>EN</span>
             </div>
         </div>
         <div class="burger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
     </nav>
 
     <header class="hero" style="background-image: url('assets/images/stade1.png')">
-        <h1 data-aos="fade-up">Découvrez FootAvenir</h1>
-        <p data-aos="fade-up" data-aos-delay="200">Un tournoi solidaire pour soutenir Premier de Cordée</p>
-        <a href="#registration" class="cta-button" data-aos="fade-up" data-aos-delay="400">S'inscrire maintenant</a>
+        <h1 data-aos="fade-up" data-translate="discover">Découvrez FootAvenir</h1>
+        <p data-aos="fade-up" data-aos-delay="200" data-translate="tagline">Un tournoi solidaire pour soutenir Premier de Cordée</p>
+        <a href="#registration" class="cta-button" data-aos="fade-up" data-aos-delay="400" data-translate="register">S'inscrire maintenant</a>
     </header>
 
     <section id="about" class="about-section">
@@ -45,6 +48,7 @@
         </div>
         
         <div class="team-section">
+            <br>
             <h3>L'ÉQUIPE</h3>
             <div class="team-grid">
                 <div class="team-member" data-aos="fade-up">
@@ -163,6 +167,7 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
 </body>
