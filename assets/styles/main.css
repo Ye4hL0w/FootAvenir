@@ -224,7 +224,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 15em;
+    height: auto;
     margin-bottom: 2rem;
 }
 
@@ -244,6 +245,16 @@ body {
     .association-info p {
         font-size: 1rem;
         padding: 0;
+    }
+
+    #premier-de-cordee {
+        width: 12em;
+    }
+}
+
+@media (max-width: 480px) {
+    #premier-de-cordee {
+        width: 10em;
     }
 }
 
