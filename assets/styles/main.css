@@ -202,6 +202,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .association-info h3 {
@@ -217,6 +218,14 @@ body {
     line-height: 1.8;
     text-align: justify;
     padding: 0 1rem;
+}
+
+#premier-de-cordee {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -276,8 +285,14 @@ body {
     margin-bottom: 1rem;
 }
 
+.team-member-image {
+    cursor: pointer;
+}
+
+
 /* Programme Section */
 .program-section {
+    text-align: center;
     padding: 5rem 2rem;
     background-color: var(--gray-light);
 }
@@ -376,10 +391,81 @@ body {
     background-color: #d03126;
 }
 
+.registration-info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.registration-info h3 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.registration-info ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registration-info li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.registration-info li i {
+    font-size: 1.2rem;
+    min-width: 25px;
+}
+
+@media (max-width: 768px) {
+    .registration-info li {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        text-align: left;
+        line-height: 1.4;
+    }
+    
+    .registration-info ul {
+        padding: 0 1rem;
+    }
+}
+
+.registration-info li:hover {
+    transform: translateX(10px);
+}
+
+.registration-info li::before {
+    content: '→';
+    margin-right: 1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
 /* Contact Section */
 .contact-section {
+    text-align: center;
     padding: 5rem 2rem;
     background-color: var(--background-color);
+}
+
+#contact-title {
+    margin-bottom: 2rem;
 }
 
 .contact-grid {
@@ -475,6 +561,8 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
+/* Burger menu */
 .burger-menu {
     display: none;
     width: 30px;
@@ -482,7 +570,7 @@ body {
     position: relative;
     cursor: pointer;
     z-index: 1000;
-    margin-left: auto; /* Pour le positionner à droite */
+    margin-left: auto;
 }
 
 .burger-menu .bar {

@@ -43,7 +43,7 @@
         <p data-aos="fade-up">FootAvenir s'engage à promouvoir le sport et la solidarité à travers des événements caritatifs. Notre tournoi de football vise à soutenir l'association Premier de Cordée, qui permet aux enfants hospitalisés de pratiquer le sport à l'hôpital et de recevoir la visite de sportifs de haut niveau.</p>
         
         <div class="association-info" data-aos="fade-up">
-            <h3>Premier de Cordée</h3>
+            <img id="premier-de-cordee" src="./assets/images/premier-de-cordee.png" alt="Premier de Cordée">
             <p>Premier de Cordée est une association qui œuvre depuis 1999 pour permettre aux enfants hospitalisés de pratiquer des activités sportives adaptées. L'association organise également des visites de sportifs de haut niveau dans les hôpitaux, apportant ainsi joie et motivation aux jeunes patients. Vos dons permettront de financer de nouveaux équipements sportifs adaptés et d'étendre les programmes à davantage d'établissements hospitaliers.</p>
         </div>
         
@@ -52,17 +52,23 @@
             <h3>L'ÉQUIPE</h3>
             <div class="team-grid">
                 <div class="team-member" data-aos="fade-up">
-                    <img src="./assets/images/helena.png" alt="Hélèna">
+                    <a href="https://www.linkedin.com/in/helena-bourrat-2343542b1/" target="_blank">
+                        <img class="team-member-image" src="./assets/images/helena.png" alt="Hélèna">
+                    </a>
                     <h4>Hélèna</h4>
                     <p>Secrétaire</p>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="100">
-                    <img src="./assets/images/christine.png" alt="Christine">
+                    <a href="https://www.linkedin.com/in/le-thi-christine-569b662aa/" target="_blank">
+                        <img class="team-member-image" src="./assets/images/christine.png" alt="Christine">
+                    </a>
                     <h4>Christine</h4>
                     <p>Trésorière</p>
                 </div>
                 <div class="team-member" data-aos="fade-up" data-aos-delay="200">
-                    <img src="./assets/images/tifenn.png" alt="Tifenn">
+                    <a href="https://www.linkedin.com/in/tifenn-brunat-9452a422b/" target="_blank">
+                        <img class="team-member-image" src="./assets/images/tifenn.png" alt="Tifenn">
+                    </a>
                     <h4>Tifenn</h4>
                     <p>Présidente</p>
                 </div>
@@ -71,31 +77,27 @@
     </section>
 
     <section id="program" class="program-section">
-        <h2 data-aos="fade-up">Programme</h2>
+        <h3 data-aos="fade-up">PROGRAMME</h3>
         <div class="program-grid">
             <div class="program-card" data-aos="fade-up">
                 <div class="card-icon"><i class="fas fa-futbol"></i></div>
                 <h3>Phase de Groupes</h3>
-                <p>Matchs de qualification le matin<br>9h00 - 12h00</p>
-                <a href="#" class="read-more">Lire plus</a>
+                <p>Les matchs de qualifications se dérouleront durant la matinée.</p>
             </div>
             <div class="program-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-icon"><i class="fas fa-trophy"></i></div>
                 <h3>Phase Finale</h3>
-                <p>Matchs éliminatoires l'après-midi<br>14h00 - 17h00</p>
-                <a href="#" class="read-more">Lire plus</a>
+                <p>Les demi-fianles et la finale se dérouleront durant l'après-midi.</p>
             </div>
             <div class="program-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="card-icon"><i class="fas fa-medal"></i></div>
                 <h3>Remise des Prix</h3>
-                <p>Cérémonie et cocktail<br>18h00 - 20h00</p>
-                <a href="#" class="read-more">Lire plus</a>
+                <p>Cérémonie après la finale.</p>
             </div>
             <div class="program-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-icon"><i class="fas fa-heart"></i></div>
                 <h3>Animation Caritative</h3>
-                <p>Rencontre avec l'association<br>Toute la journée</p>
-                <a href="#" class="read-more">Lire plus</a>
+                <p>Rencontre avec l'association.<br>Toute la journée</p>
             </div>
         </div>
     </section>
@@ -109,16 +111,17 @@
         <div class="registration-info" data-aos="fade-up">
             <h3>Informations importantes</h3>
             <ul>
-                <li>Équipes de 5 à 7 joueurs</li>
-                <li>Frais d'inscription : 50€ par équipe</li>
-                <li>100% des bénéfices reversés à Premier de Cordée</li>
-                <li>Catégories : mixte, +16 ans</li>
+                <li><i class="fas fa-calendar-alt"></i> Le tournoi se déroulera le 17 mai 2025</li>
+                <li><i class="fas fa-users"></i> Équipes de 8 joueurs</li>
+                <li><i class="fas fa-euro-sign"></i> Frais d'inscription : 5€ par joueurs</li>
+                <li><i class="fas fa-heart"></i> 100% des bénéfices reversés à Premier de Cordée</li>
+                <li><i class="fas fa-user-friends"></i> Catégories : mixte, +16 ans</li>
             </ul>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <h2 data-aos="fade-up">Contact</h2>
+        <h3 id="contact-title" data-aos="fade-up">CONTACT</h3>
         <div class="contact-grid">
             <div class="contact-info" data-aos="fade-up">
                 <div class="contact-item">
@@ -134,13 +137,14 @@
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Adresse</h3>
-                    <p>155 Rte de Grenoble, 06200 Nice, France</p>
+                    <p>41 Bd Napoléon III, 06200 Nice</p>
                 </div>
             </div>
-            <form class="contact-form" data-aos="fade-up">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
+            <form class="contact-form" data-aos="fade-up" action="https://formspree.io/f/footavenir@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="_replyto" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="hidden" name="_subject" value="Nouveau message de FootAvenir">
                 <button type="submit">Envoyer</button>
             </form>
         </div>
@@ -152,7 +156,7 @@
                 <h3>FOOTAVENIR</h3>
                 <p>01 23 45 67 89</p>
                 <p>footavenir@gmail.com</p>
-                <p>155 Rte de Grenoble, 06200 Nice, France</p>
+                <p>41 Bd Napoléon III, 06200 Nice</p>
             </div>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook"></i></a>
