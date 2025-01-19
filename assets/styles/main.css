@@ -150,6 +150,7 @@ body {
 /* About Section */
 .about-section {
     padding: 8rem 2rem;
+    padding-bottom: 2rem;
     background-color: var(--background-color);
     position: relative;
     overflow: hidden;
@@ -300,6 +301,45 @@ body {
     cursor: pointer;
 }
 
+.donation-section {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.donation-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.donation-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.donation-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.donation-button:hover {
+    background-color: transparent;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
 
 /* Programme Section */
 .program-section {
@@ -634,4 +674,3 @@ body {
         padding: 2rem;
     }
 }
-

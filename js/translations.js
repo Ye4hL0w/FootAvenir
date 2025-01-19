@@ -19,6 +19,9 @@ const translations = {
         secretary: "Secrétaire",
         treasurer: "Trésorière",
         president: "Présidente",
+        donationTitle: "Faire un don",
+        donationText: "Vous pouvez également nous aider à organiser cet événement en faisant un don. Chaque contribution nous aide à rendre ce tournoi possible.",
+        donate: "Faire un don",
 
         // Program Section
         programTitle: "PROGRAMME",
@@ -29,7 +32,7 @@ const translations = {
         awards: "Remise des Prix",
         awardsText: "Cérémonie après la finale.",
         charity: "Animation Caritative",
-        charityText: "Rencontre avec l'association.\nToute la journée",
+        charityText: "Rencontre avec les membres de l'association.\nToute la journée.",
 
         // Registration Section
         registerTournament: "S'inscrire au tournoi",
@@ -37,7 +40,7 @@ const translations = {
         importantInfo: "Informations importantes",
         tournamentDate: "Le tournoi se déroulera le 17 mai 2025",
         teamSize: "Équipes de 8 joueurs",
-        registrationFee: "Frais d'inscription par joueurs : 5€ pour les étudiants 8€ pour les non étudiants.",
+        registrationFee: "Frais d'inscription par joueurs : 5€ pour les étudiants 8€ pour les non étudiants",
         benefits: "100% des bénéfices reversés à Premier de Cordée",
         categories: "Catégories : mixte, +16 ans",
 
@@ -74,6 +77,9 @@ const translations = {
         secretary: "Secretary",
         treasurer: "Treasurer",
         president: "President",
+        donationTitle: "Make a donation",
+        donationText: "You can also help us organize this event by making a donation. Every contribution helps us make this tournament possible.",
+        donate: "Donate",
 
         // Program Section
         programTitle: "PROGRAM",
@@ -84,7 +90,7 @@ const translations = {
         awards: "Awards Ceremony",
         awardsText: "Ceremony after the final.",
         charity: "Charity Event",
-        charityText: "Meet with the association.\nAll day long",
+        charityText: "Meet with the members of the association.\nAll day long.",
 
         // Registration Section
         registerTournament: "Register for the tournament",
@@ -92,7 +98,7 @@ const translations = {
         importantInfo: "Important Information",
         tournamentDate: "The tournament will take place on May 17, 2025",
         teamSize: "Teams of 8 players",
-        registrationFee: "Registration fee per player: €5 for students, €8 for non-students.",
+        registrationFee: "Registration fee per player: €5 for students, €8 for non-students",
         benefits: "100% of profits donated to Premier de Cordée",
         categories: "Categories: mixed, 16+",
 
