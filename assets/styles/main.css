@@ -567,6 +567,13 @@ body {
     border-radius: 5px;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.5);
+}
+
 .contact-form textarea {
     height: 150px;
 }
