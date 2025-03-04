@@ -221,7 +221,7 @@ body {
     padding: 0 1rem;
 }
 
-#premier-de-cordee {
+#premiers-de-cordee {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -248,13 +248,13 @@ body {
         padding: 0;
     }
 
-    #premier-de-cordee {
+    #premiers-de-cordee {
         width: 12em;
     }
 }
 
 @media (max-width: 480px) {
-    #premier-de-cordee {
+    #premiers-de-cordee {
         width: 10em;
     }
 }
