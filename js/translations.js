@@ -3,6 +3,7 @@ const translations = {
         // Navigation
         about: "À propos",
         program: "Programme",
+        gallery: "Galerie",
         registration: "Inscription",
         contact: "Contact",
 
@@ -44,6 +45,43 @@ const translations = {
         benefits: "100% des bénéfices reversés à Premiers de Cordée",
         categories: "Catégories : mixte, +16 ans",
 
+        // Gallery Section
+        galleryTitle: "GALERIE DU TOURNOI",
+        galleryIntro: "Revivez l'aventure extraordinaire de notre tournoi caritatif ! Des premiers coups de sifflet aux célébrations finales, découvrez les moments magiques qui ont uni sport et solidarité pour une belle cause.",
+        
+        // Gallery Images
+        kickoffTitle: "Coup d'envoi",
+        kickoffDesc: "Le tournoi commence sous un beau soleil avec tous les participants prêts à donner le meilleur",
+        teamSpiritTitle: "Esprit d'équipe",
+        teamSpiritDesc: "Une équipe unie et déterminée, prête à tout donner pour la victoire et la solidarité",
+        tacticTitle: "Préparation tactique",
+        tacticDesc: "Concentration et motivation avant d'entrer sur le terrain",
+        actionTitle: "Action sur le terrain",
+        actionDesc: "L'intensité des matchs avec des joueurs engagés et passionnés",
+        duelTitle: "Duel au sommet",
+        duelDesc: "Des phases de jeu spectaculaires qui ont électrisé le public",
+        briefingTitle: "Briefing collectif",
+        briefingDesc: "Moment de concentration où tous les participants écoutent attentivement les consignes",
+        waitingTitle: "L'attente fébrile",
+        waitingDesc: "Le suspense avant la remise des prix, tous réunis dans l'attente des résultats",
+        finalistsTitle: "Les finalistes",
+        finalistsDesc: "Les équipes qui ont brillé jusqu'en finale, un moment de fierté partagée",
+        winnersTitle: "Les grands vainqueurs",
+        winnersDesc: "L'équipe championne qui a su allier talent sportif et esprit solidaire",
+        celebrationTitle: "Explosion de joie",
+        celebrationDesc: "La célébration mémorable des vainqueurs, un moment d'émotion pure",
+        volunteersTitle: "Nos héros en blanc",
+        volunteersDesc: "L'équipe de bénévoles exceptionnelle qui a rendu ce tournoi possible",
+        
+        // Statistics
+        teamsLabel: "Équipes participantes",
+        participantsLabel: "Participants",
+        fundsLabel: "Fonds récoltés",
+        
+        thankYouTitle: "MERCI À TOUS !",
+        thankYouMessage: "Cette journée exceptionnelle n'aurait jamais pu voir le jour sans l'engagement extraordinaire de chacun d'entre vous. Joueurs passionnés, bénévoles dévoués, supporters enthousiastes et généreux donateurs : vous avez tous contribué à faire de ce tournoi bien plus qu'une simple compétition sportive. Ensemble, nous avons créé un véritable élan de solidarité qui permettra à l'association Premiers de Cordée d'apporter encore plus de joie et d'espoir aux enfants hospitalisés.",
+        thankYouSignature: "Avec toute notre gratitude et notre fierté,\nL'équipe FootAvenir",
+
         // Contact Section
         contactTitle: "CONTACT",
         call: "Appel",
@@ -61,6 +99,7 @@ const translations = {
         // Navigation
         about: "About",
         program: "Program",
+        gallery: "Gallery",
         registration: "Registration",
         contact: "Contact",
 
@@ -101,6 +140,43 @@ const translations = {
         registrationFee: "Registration fee per player: €5 for students, €8 for non-students",
         benefits: "100% of profits donated to Premiers de Cordée",
         categories: "Categories: mixed, 16+",
+
+        // Gallery Section
+        galleryTitle: "TOURNAMENT GALLERY",
+        galleryIntro: "Relive the extraordinary adventure of our charity tournament! From the first whistle to the final celebrations, discover the magical moments that united sport and solidarity for a great cause.",
+        
+        // Gallery Images
+        kickoffTitle: "Kick-off",
+        kickoffDesc: "The tournament begins under beautiful sunshine with all participants ready to give their best",
+        teamSpiritTitle: "Team Spirit",
+        teamSpiritDesc: "A united and determined team, ready to give everything for victory and solidarity",
+        tacticTitle: "Tactical Preparation",
+        tacticDesc: "Concentration and motivation before entering the field",
+        actionTitle: "Action on the Field",
+        actionDesc: "The intensity of matches with engaged and passionate players",
+        duelTitle: "Summit Duel",
+        duelDesc: "Spectacular game phases that electrified the audience",
+        briefingTitle: "Group Briefing",
+        briefingDesc: "Moment of concentration where all participants listen carefully to instructions",
+        waitingTitle: "Feverish Waiting",
+        waitingDesc: "The suspense before the awards ceremony, all gathered waiting for results",
+        finalistsTitle: "The Finalists",
+        finalistsDesc: "The teams that shined until the final, a moment of shared pride",
+        winnersTitle: "The Great Winners",
+        winnersDesc: "The champion team that combined sporting talent and solidarity spirit",
+        celebrationTitle: "Explosion of Joy",
+        celebrationDesc: "The memorable celebration of the winners, a moment of pure emotion",
+        volunteersTitle: "Our Heroes in White",
+        volunteersDesc: "The exceptional volunteer team that made this tournament possible",
+        
+        // Statistics
+        teamsLabel: "Participating Teams",
+        participantsLabel: "Participants",
+        fundsLabel: "Funds Raised",
+        
+        thankYouTitle: "THANK YOU ALL!",
+        thankYouMessage: "This exceptional day could never have happened without the extraordinary commitment of each and every one of you. Passionate players, dedicated volunteers, enthusiastic supporters and generous donors: you all contributed to making this tournament much more than a simple sporting competition. Together, we created a true wave of solidarity that will enable the Premiers de Cordée association to bring even more joy and hope to hospitalized children.",
+        thankYouSignature: "With all our gratitude and pride,\nThe FootAvenir team",
 
         // Contact Section
         contactTitle: "CONTACT",
